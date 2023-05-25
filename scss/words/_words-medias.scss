@@ -1,0 +1,29 @@
+
+
+@media (min-width: 700px) {
+    .words {
+        &__title {
+            text-align: left;
+        }
+        &__text {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .words {
+        &__inner {
+            max-width: 60%;
+        }
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+}

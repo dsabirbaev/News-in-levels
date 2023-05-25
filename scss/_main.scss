@@ -1,0 +1,41 @@
+@import 'variables',
+        'mixins',
+        'fonts';
+
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    background-color: $color-body;
+}
+
+.container {
+   padding: 0 15px;
+//    border: 1px solid red;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+
+@import './header/header';
+@import './header/header-medias';
+
+@import './news/news';
+@import './news/news-medias';
+
+@import './words/words';
+@import './words/words-medias';
+
+@import './skills/skills';
+@import './skills/skills-medias';
+
+@import './footer/footer';
+@import './footer/footer-medias';
+
+
+
+
+
+             
+        

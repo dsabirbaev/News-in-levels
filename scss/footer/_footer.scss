@@ -1,0 +1,32 @@
+
+.footer {
+    background-color: $color-footer;
+    padding: 20px 0 40px;
+
+    &__inner {
+        @include flex(column, center, center, 20px);
+    }
+    &__left, &__right {
+        @include font-style(14px, $ff-OpenSansRegular, 400, $color-white);
+        text-align: center;
+    }
+    &__socials {
+        color: $color-white;
+        span {
+            padding: 5px 8px;
+            background-color: $color-grey;
+            border-radius: 50%;
+            transition: all 0.5s;
+        }
+        span:nth-child(1) {
+            &:hover {
+                background-color: $color-blue;
+            }
+        }
+        span:nth-child(2) {
+            &:hover {
+                background-color: $color-orange;
+            }
+        }
+    }
+}

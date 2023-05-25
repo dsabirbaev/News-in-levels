@@ -1,0 +1,105 @@
+.news {
+    padding: 20px 0;
+    &__inner {
+        @include flex(column, $gap: 10px);
+    }
+    &__items {
+        @include flex(column, $gap: 10px);
+    }
+    &__item-content {
+        @include flex(column, $gap: 10px);
+    }
+    &__item {
+        background-color: $color-white;
+        padding: 15px;
+        @include flex(column, $gap: 10px);
+        &-img {
+            min-height: 150px;
+            min-width: 260px;
+            // border: 1px solid red;
+            align-self: center
+        }
+        &-img_first {
+            @include backgroundImage(url('../images/news/1.jpg'), center);
+        }
+        &-img_second {
+            @include backgroundImage(url('../images/news/2.jpg'), center);
+        }
+        &-img_third {
+            @include backgroundImage(url('../images/news/3.jpg'), center);
+        }
+        &-img_fourth {
+            @include backgroundImage(url('../images/news/4.jpg'), center);
+        }
+        &-img_fifth {
+            @include backgroundImage(url('../images/news/5.jpg'), center);
+        }
+        &-img_sixth {
+            @include backgroundImage(url('../images/news/6.jpg'), center);
+        }
+        &-img_seventh {
+            @include backgroundImage(url('../images/news/7.jpg'), center);
+        }
+        &-img_eighth {
+            @include backgroundImage(url('../images/news/8.jpg'), center);
+        }
+        &-img_ninth {
+            @include backgroundImage(url('../images/news/9.jpg'), center);
+        }
+        &-img_tenth {
+            @include backgroundImage(url('../images/news/10.jpg'), center);
+        }
+        &-img_eleventh {
+            @include backgroundImage(url('../images/news/11.jpg'), center);
+        }
+        &-title {
+            @include font-style(16px, $ff-OpenSansRegular, 400, $color-level);
+        }
+
+        &-date,
+        &-text {
+            @include font-style(13px, $ff-OpenSansRegular, 400, $color-black);
+            line-height: 1.3;
+        }
+
+        &-links {}
+
+        &-link {
+            @include font-style(14px, $ff-OpenSansRegular, 400, $color-white);
+            background-color: $color-level;
+            border-radius: 5px;
+            padding: 4px 10px;
+        }
+    }
+    &__pagination {
+        margin-top: 20px;
+        @include flex($j-content:flex-end);
+        li {
+            background-color: $color-white;
+            padding: 4px 8px;
+        }
+        li + li {
+            border-left: 1px solid $color-grey;
+        }
+        .active {
+            background-color: $color-level;
+            color: $color-white;
+        }
+        &-link {
+            @include font-style(12px, $ff-OpenSansRegular, 400, $color-level);
+        }
+    }
+    &__search {
+        @include flex(row, flex-end, center, 10px);
+    }
+    &__label {
+        @include font-style(14px, $ff-OpenSansRegular, 400, $color-white);
+        background-color: $color-level;
+        cursor: pointer;
+        padding: 12px 15px;
+    }
+    &__input {
+        padding: 5px;
+        height: 30px;
+    }
+}

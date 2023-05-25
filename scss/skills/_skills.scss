@@ -1,0 +1,44 @@
+
+
+.skills {
+    padding: 20px 0;
+
+    &__inner {
+      
+    }
+    &__items {
+        background-color: $color-white;
+        @include flex(column, $gap: 20px);
+        padding: 25px 20px;
+    }
+    &__item {
+        @include flex(column, $gap: 20px);
+    }
+    &__title {
+        @include font-style(16px, $ff-OpenSansBold, 700, $color-level);
+        text-align: center;
+        line-height: 1.2;
+    }
+    &__content {
+        @include flex($gap: 20px);
+        img {
+            align-self: flex-start;
+        }
+        &-body {
+            @include flex(column, $gap: 20px);
+        }
+        &-title {
+            @include font-style(15px, $ff-OpenSansBold, 700, $color-green);
+        }
+        &-text {
+            @include font-style(14px, $ff-OpenSansRegular, 400, $color-black);
+            p {
+                line-height: 1.3;
+            }
+            p + p {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

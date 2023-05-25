@@ -1,0 +1,38 @@
+
+
+@media (min-width: 700px) {
+    .news {
+        &__item {
+            @include flex(row);
+         
+            &-content {
+                justify-content: space-between;
+            }
+
+            &-img {
+                min-height: 100px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .news {
+        &__inner {
+            display: flex;
+            flex-direction: row;
+        }
+        &__left {
+            flex-basis: 60%;
+        }
+        &__right {
+            flex-basis: 40%;
+        }
+       
+    }
+}
